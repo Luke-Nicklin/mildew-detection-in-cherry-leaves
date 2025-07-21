@@ -94,6 +94,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Credits
 
+- The repository template used for this project was created by Code Institute.
+- Code from Code Institute's Walk through Project 01 has been used on the Data collection and Data visualisation jupyter notebooks.
 - In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
 - You can break the credits section up into Content and Media, depending on what you have included in your project.
 
