@@ -15,7 +15,16 @@ def summary_body():
     # Placeholder for future content
     st.image("https://via.placeholder.com/600x400.png?text=Project+Summary+Placeholder", caption="Project Summary Placeholder")
     
-    st.write("More features will be added soon!")
+    st.write("""
+             
+        The project has two main business requirements:
+    - The client is interested in conducting a study to visually differentiate
+    "a cherry leaf that is healthy from one that contains powdery mildew.
+    - The client is interested in predicting if a cherry leaf is healthy or
+    "contains powdery mildew.
+    """)
+             
+
     st.write("""
         **Key Findings:**
         - Machine learning models can effectively classify cherry leaves based 
