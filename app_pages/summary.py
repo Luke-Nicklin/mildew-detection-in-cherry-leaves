@@ -10,12 +10,24 @@ def summary_body():
         "The goal is to provide a reliable method for farmers"
         " and researchers to identify and manage this disease effectively.")
     
-    # Placeholder for future content
-    st.image("https://via.placeholder.com/600x400.png?text=Project+Summary+Placeholder", caption="Project Summary Placeholder")
+    # Display an image related to the project
+    # Centre the image using columns
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col2:
+        st.image("streamlit_images/cherry-leaf.png", caption="Healthy Cherry Leaf")
     
     st.write("""
+             Powdery mildew is a fungal disease that affects many plants, 
+             including cherry trees. It is caused by Podosphaera 
+             Clandestina, which thrives in warm, dry conditions. 
+             The disease manifests as a white, powdery coating on the leaves,
+             stems, and fruit of the plant. If left untreated, it can lead to
+             reduced photosynthesis, stunted growth, and lower fruit yield.
+             """)
              
-        The project has two main business requirements:
+
+    st.write("""
+             **Business Requirements:**
     - The client is interested in conducting a study to visually differentiate
     a cherry leaf that is healthy from one that contains powdery mildew.
     - The client is interested in predicting if a cherry leaf is healthy or
@@ -37,4 +49,3 @@ def summary_body():
         - Future work will focus on improving model accuracy and expanding the 
         dataset.
     """)
-    
