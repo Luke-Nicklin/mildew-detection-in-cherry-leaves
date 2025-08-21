@@ -3,8 +3,6 @@ import streamlit as st
 def summary_body():
     """Display the summary page."""
     st.title("Project Summary")
-    st.write("This page provides a summary of the project, "
-             "including key findings and conclusions.")
     
     st.write(
         "This project focuses on detecting powdery mildew on"
@@ -19,22 +17,24 @@ def summary_body():
              
         The project has two main business requirements:
     - The client is interested in conducting a study to visually differentiate
-    "a cherry leaf that is healthy from one that contains powdery mildew.
+    a cherry leaf that is healthy from one that contains powdery mildew.
     - The client is interested in predicting if a cherry leaf is healthy or
-    "contains powdery mildew.
+    contains powdery mildew.
     """)
              
 
     st.write("""
-        **Key Findings:**
-        - Machine learning models can effectively classify cherry leaves based 
-        "on the presence of powdery mildew.
+        **Key information:**
         - The dataset used for training and testing includes various images of 
-        "cherry leaves with and without the disease.
+        cherry leaves with and without the disease.
+        - The image dataset contains 2104 healthy leaves and 2104 infected leaves.
         
         **Conclusions:**
         - The project demonstrates the potential of using machine learning for 
-        "agricultural disease detection.
+        agricultural disease detection.
+        - Machine learning models can effectively classify cherry leaves based 
+        on visual features, aiding in early detection of powdery mildew.
         - Future work will focus on improving model accuracy and expanding the 
-        "dataset.
+        dataset.
     """)
+    
