@@ -1,6 +1,6 @@
-# ![Cherry leaf](streamlit_images/cherry-leaf.png)
-
 ## Cherry Leaf Powdery Mildew Detector
+
+# ![Cherry leaf](streamlit_images/cherry-leaf.png)
 
 ## Business Requirements
 
