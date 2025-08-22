@@ -50,7 +50,10 @@ This requirement directly maps to a machine learning classification task. The go
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+- An ML model is required to automate the diagnosis of cherry leaves as either healthy or infected with powdery mildew. This replaces the current slow and inaccurate manual inspection process.
+- The model is a supervised, 2-class, single-label, classification task. Its primary goal is to provide a faster and more reliable detection method than a human-based method.
+- A key success metric is achieving an accuracy of 97% or above on the test set, ensuring the model's reliability and building trust in its automated diagnostics. This was achieved with the selected model.
+- The model's output provides actionable intelligence, specifically how it indicates infection and an associated probability score, which allows workers to make swift and informed decisions on the farm.
 
 ## Dashboard Design
 
