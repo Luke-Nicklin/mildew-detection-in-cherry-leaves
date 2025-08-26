@@ -1,7 +1,7 @@
 """Model performance page."""
 
-import streamlit as st
 import os
+import streamlit as st
 import pandas as pd
 from src.machine_learning.evaluate_clf import load_evaluation_metrics
 
