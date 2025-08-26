@@ -60,6 +60,21 @@ This requirement directly maps to a machine learning classification task. The go
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
+Streamlit Multipage was used to create a menu with the following pages:
+
+1. Summary - This page gives a high level overview of the project. It includes a description of what the powdery mildew fungal infection is, an image of a healthy cherry leaf, business requirements, key information and conclusions.
+
+2. Project Hypotheses - This page includes details of the hypotheses described above, images of healthy and infected leaves and objectives for the project.
+
+3. Leaves Visualiser - This page contains 3 checkboxes so the user can see the:
+    - Difference between average and variability image
+    - Differences between average infected leaves and average healthy leaves
+    - Image montage
+
+4. Powdery Mildew Detector - This page includes a link to download the cherry leaf data set, file upload functionality so a user can upload an image and a predict button so users can detect the presence of powedery mildew using the machine learning model. It will display the image, the prediction result and a barplot of the visual representation of the precidtion. There is also a download button where users can download the results as a csv file.
+
+5. ML Performance - This page shows a bar chart of the labels distribution in train, validation and test sets, the model history for accuracy and loss, a table that showcases the genralised performance on the test set and information on the models accuracy.
+
 ## Unfixed Bugs
 
 - You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.

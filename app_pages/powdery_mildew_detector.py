@@ -19,6 +19,11 @@ def powdery_mildew_detector_body():
     st.write("Upload an image of a cherry leaf to detect the presence of "
              "powdery mildew using a machine learning model.")
 
+    st.write(
+        "You can download a set of healthy and infected leaf images from "
+        "[Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)"
+    )
+
     # File uploader for image input
     uploaded_file = st.file_uploader(
         "Choose an image file (JPG, PNG)", type=["jpg", "jpeg", "png"]
