@@ -132,7 +132,3 @@ The project was planned using epics and user stories for each of the 6 CRISP-DM 
 ### Media
 
 - The photo used on the app summary page and at the top of the read me file is a generic cherry leaf image taken from [Vecteezy](https://www.vecteezy.com/photo/53181854-close-up-of-a-vibrant-green-leaf).
-
-## Acknowledgements (optional)
-
-- Thank the people who provided support throughout this project.
