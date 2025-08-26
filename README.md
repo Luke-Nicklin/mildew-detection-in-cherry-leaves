@@ -74,7 +74,8 @@ Streamlit Multipage was used to create a menu with the following pages:
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+- There are currently no known bugs associated with this project.
+- The only issue I encountered whilst building the predicitve analytics project is the fact I had to use Python version 3.12 instead of the latest Python version 3.13, as certain libraries/frameworks and packages weren't compatiable with the latest version of python. I therefore had to rework certain bits of code to make sure it worked with Python 3.12.
 
 ## Deployment
 
