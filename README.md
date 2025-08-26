@@ -103,12 +103,28 @@ Streamlit Multipage was used to create a menu with the following pages:
 - Pandas - Used to create a DataFrame that structures the prediction results, making it easy to display them and provide a download link.
 - OS - Used to create robust file paths that work correctly on different systems, avoiding common errors like those caused by a backslash or forward slash.
 
+## CRISP-DM
+
+CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology for data minig projects. It provides a structured framework that organisers data mining into 6 phases:
+
+- Business understanding
+- Data understanding
+- Data preparation
+- Modelling
+- Evaluation
+- Deployment
+
+The project was planned using epics and user stories for each of the 6 CRISP-DM phases.
+
+# ![Project Kanban Board](readme_images/Powdery-mildew-kanban.png)
+
 ## Credits
 
 - The repository template used for this project was created by Code Institute.
-- Code from Code Institute's Walk through Project 01 has been used on the Data collection, Data visualisation and Modelling Evaluating jupyter notebooks.
-- Inspiration and code have been used and adapted from cla-cif's Cherry-Powdery-Mildew-Detector project [https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector] and barty-s' cherry-leaf-mildew-detection project [https://github.com/barty-s/cherry-leaf-mildew-detection-project] for the Data collection, Data visualisation and Modelling Evaluating jupyter notebooks.
+- Code from Code Institute's Walk through Project 01 has been used on the Data collection, Data visualisation, Modelling Evaluating jupyter notebooks and app pages.
+- Inspiration and code have been used and adapted from cla-cif's Cherry-Powdery-Mildew-Detector project [https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector] and barty-s' cherry-leaf-mildew-detection project [https://github.com/barty-s/cherry-leaf-mildew-detection-project] for the Data collection, Data visualisation, Modelling Evaluating jupyter notebooks and app pages.
 - Definition of cherry powdery mildew was adapted from the Washington State University website [https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/].
+- The dataset was provided by Code Institute and can be found [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
 - In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
 - You can break the credits section up into Content and Media, depending on what you have included in your project.
 
