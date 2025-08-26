@@ -6,8 +6,10 @@ import numpy as np
 import pandas as pd
 
 from src.data_management import download_dataframe_as_csv
-from src.machine_learning.predictive_analysis import plot_predictions_probabilities
-from src.machine_learning.predictive_analysis import resize_input_image
+from src.machine_learning.predictive_analysis import (
+    plot_predictions_probabilities,
+    resize_input_image,
+)
 from src.machine_learning.predictive_analysis import load_model_and_predict
 
 
@@ -34,17 +36,19 @@ def powdery_mildew_detector_body():
             with st.spinner('Processing...'):
                 # Resize and preprocess the image
                 my_image = resize_input_image(image, version)
-                
+
                 # Check if image processing was successful
                 if my_image is not None:
                     # Load model and make predictions
-                    pred_proba, pred_class = load_model_and_predict(my_image=my_image, version=version)
-                    
+                    pred_proba, _ = load_model_and_predict(
+                        my_image=my_image, version=version
+                    )
+
                     if pred_proba is not None:
                         # Ensure pred_proba is a list for the plotting function
                         if isinstance(pred_proba, np.ndarray):
                             pred_proba = pred_proba.tolist()
-                        
+
                         # Plot prediction probabilities
                         plot_predictions_probabilities(pred_proba)
 
@@ -56,4 +60,7 @@ def powdery_mildew_detector_body():
 
                         # Download button for results
                         st.write(download_dataframe_as_csv(results_df))
-                        st.success("Prediction complete! You can download the results above.")
+                        st.success(
+                            "Prediction complete! "
+                            "You can download the results above."
+                        )

@@ -1,5 +1,6 @@
-import streamlit as st
-from app_pages.multipage import MultiPage  # Ensure MultiPage is defined in app_pages/multipage.py or correct the import path
+"""Application entry point for the Streamlit multi-page app."""
+
+from app_pages.multipage import MultiPage
 
 # Load all pages here
 from app_pages.summary import summary_body

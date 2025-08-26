@@ -1,3 +1,5 @@
+"""Model performance page."""
+
 import streamlit as st
 
 
