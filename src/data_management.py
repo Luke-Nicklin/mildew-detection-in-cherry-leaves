@@ -20,9 +20,10 @@ def download_dataframe_as_csv(df):
         data=csv_buffer,
         file_name='data.csv',
         mime='text/csv'
-                )
+                    )
 
-    def load_pkl_file(file_path):
-        """Load a pickle file and return the object."""
-        with open(file_path, 'rb') as file:
-            return pickle.load(file)
+
+def load_pkl_file(file_path):
+    """Load a pickle file and return the object."""
+    with open(file_path, 'rb') as file:
+        return pickle.load(file)

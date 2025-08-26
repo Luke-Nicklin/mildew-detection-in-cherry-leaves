@@ -2,17 +2,14 @@
 
 import streamlit as st
 import numpy as np
-import pandas as pd
-import plotly
-from plotly import graph_objs
 import plotly.graph_objects as go
 
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 from PIL import Image
 from src.data_management import load_pkl_file
 
 
-def plot_predictions_probabilities(pred_proba, pred_class):
+def plot_predictions_probabilities(pred_proba):
     """Plot the prediction probabilities using Plotly."""
     labels = ['Healthy', 'Powdery Mildew']
     colors = ['#00cc96', '#ab63fa']
