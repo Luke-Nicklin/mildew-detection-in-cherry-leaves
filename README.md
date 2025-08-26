@@ -95,6 +95,14 @@ Streamlit Multipage was used to create a menu with the following pages:
 
 - Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
+- Streamlit - Used to build to user interface and turn Python scripts into an interactive web app.
+- Keras - A deep learning framework used to build and load the Convolutional Nerual Network (CNN) model. It also allows you to use a trained model for precition within the web app.
+- Pillow (PIL) - Used to open, reseize and convert image files to the format required by the model.
+- NumPy - Used to handel the image data.
+- Plotly - Used to create the bar chart that displays the model's prediction probabilities, giving the user a clear understanding of the results.
+- Pandas - Used to create a DataFrame that structures the prediction results, making it easy to display them and provide a download link.
+- OS - Used to create robust file paths that work correctly on different systems, avoiding common errors like those caused by a backslash or forward slash.
+
 ## Credits
 
 - The repository template used for this project was created by Code Institute.
