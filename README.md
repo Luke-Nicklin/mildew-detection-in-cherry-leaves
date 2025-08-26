@@ -106,7 +106,7 @@ Streamlit Multipage was used to create a menu with the following pages:
 
 ## CRISP-DM
 
-CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology for data minig projects. It provides a structured framework that organisers data mining into 6 phases:
+CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology for data minig projects. It provides a structured framework that organises data mining into 6 phases:
 
 - Business understanding
 - Data understanding
