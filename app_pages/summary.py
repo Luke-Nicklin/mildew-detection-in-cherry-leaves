@@ -18,7 +18,7 @@ def summary_body():
     _, col2, _ = st.columns([1, 6, 1])
     with col2:
         st.image(
-            "streamlit_images/cherry-leaf.png",
+            "streamlit_images/vecteezy-cherry-leaf.jpg",
             caption="Healthy Cherry Leaf"
         )
 

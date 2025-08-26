@@ -136,8 +136,7 @@ The project was planned using epics and user stories for each of the 6 CRISP-DM 
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- The photo used on the app summary page is a generic cherry leaf image taken [Vecteezy](https://www.vecteezy.com/photo/53181854-close-up-of-a-vibrant-green-leaf).
 
 ## Acknowledgements (optional)
 
