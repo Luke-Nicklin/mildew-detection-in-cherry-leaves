@@ -10,6 +10,12 @@ def ml_performance_body():
     """ML performance metrics page."""
     st.title("Machine Learning Performance")
 
+    st.write("""The machine learning model used for this project was
+        a Convolutional Neural Network (CNN) implemented using TensorFlow
+        and Keras. The model was trained to classify cherry leaves as either
+        healthy or infected with powdery mildew.
+        """)
+
     # Find the root directory
     st.write("### Train, Validation and Test Set: Labels Distribution")
     st.write("""
