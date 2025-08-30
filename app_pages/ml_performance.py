@@ -22,6 +22,11 @@ def ml_performance_body():
              use_container_width=True)
 
     st.write("### Model history")
+    st.write("""
+        The plots below show the model's training accuracy and loss
+        over epochs. The model was trained for 20 epochs with a 
+             batch size of 32.
+        """)
     col1, col2 = st.columns(2)
     with col1:
         st.image(os.path.join("outputs", "v1", "model_training_acc.png"),
