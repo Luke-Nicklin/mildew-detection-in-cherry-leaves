@@ -1,11 +1,10 @@
 """Predictive analysis module using machine learning algorithms."""
 
+import os
 import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 import joblib  # Import joblib to handle pickle files
-import os
-import uuid
 
 from keras.models import load_model
 from PIL import Image
@@ -59,9 +58,11 @@ def resize_input_image(img, version):
         image_shape_path = os.path.join('outputs', version, 'image_shape.pkl')
         image_shape = joblib.load(filename=image_shape_path)
 
-        # Resize the image to the specified dimensions using a high-quality filter.
-        img_resized = img.resize((image_shape[1], image_shape[0]), Image.Resampling.LANCZOS)
-        
+        # Resize the image to the specified dimensions using a
+        # high-quality filter.
+        img_resized = img.resize(
+            (image_shape[1], image_shape[0]), Image.Resampling.LANCZOS)
+
         # Expand dimensions for the model and normalize the pixel values.
         my_image = np.expand_dims(img_resized, axis=0) / 255.0
 
@@ -70,7 +71,7 @@ def resize_input_image(img, version):
     except FileNotFoundError:
         st.error(f"Error: image_shape.pkl not found at '{image_shape_path}'.")
         return None
-    except Exception as e:
+    except (OSError, ValueError) as e:
         st.error(f"Error processing image: {e}")
         return None
 
@@ -84,36 +85,45 @@ def load_model_and_predict(my_image, version):
         version (str): The model version (e.g., 'v1').
 
     Returns:
-        tuple: A tuple containing the prediction probabilities for all classes and the predicted class.
+        tuple: A tuple containing the prediction probabilities for all
+        classes and the predicted class.
     """
     try:
         # Construct the path to the model file using the provided version.
-        model_path = os.path.join('outputs', version, 'cherry_leaves_model.keras')
-        
+        model_path = os.path.join(
+            'outputs', version, 'cherry_leaves_model.keras')
+
         # Load the Keras model.
         model = load_model(model_path)
-        
-        # Make a prediction. For a binary classifier, this returns a single value
-        # representing the probability of the positive class (Powdery Mildew).
+
+        # Make a prediction. For a binary classifier, this
+        # returns a single value representing the
+        # probability of the positive class (Powdery Mildew).
         pred_prob_mildew = model.predict(my_image)[0][0]
-        
+
         # Calculate the probability for the negative class (Healthy).
         pred_prob_healthy = 1 - pred_prob_mildew
-        
-        # Combine probabilities into a list to match the plotter function's expectations.
+
+        # Combine probabilities into a list to match the plotter
+        # function's expectations.
         pred_proba = [pred_prob_healthy, pred_prob_mildew]
 
         # Determine the predicted class based on the higher probability.
         pred_class_index = np.argmax(pred_proba)
-        pred_class_label = "Healthy" if pred_class_index == 0 else "Powdery Mildew"
-        
+        pred_class_label = (
+            "Healthy" if pred_class_index == 0 else "Powdery Mildew"
+        )
+
         st.success(f"The model predicts the leaf is **{pred_class_label}**.")
 
         return pred_proba, pred_class_label
 
     except FileNotFoundError:
-        st.error(f"Error: Model not found at '{model_path}'. Please ensure the file exists.")
+        st.error(
+            (f"Error: Model not found at '{model_path}'. "
+             "Please ensure the file exists.")
+        )
         return None, None
-    except Exception as e:
+    except (OSError, ValueError) as e:
         st.error(f"Error during prediction: {e}")
         return None, None
