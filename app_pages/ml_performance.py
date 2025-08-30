@@ -12,6 +12,11 @@ def ml_performance_body():
 
     # Find the root directory
     st.write("### Train, Validation and Test Set: Labels Distribution")
+    st.write("""
+        The bar chart below illustrates the distribution of labels
+        (healthy vs. powdery mildew) across the training, validation,
+        and test datasets.
+        """)
     st.image(os.path.join("outputs", "v1", "label_distribution_bar.png"),
              caption="Labels Distribution in Train, Validation and Test Sets",
              use_container_width=True)
