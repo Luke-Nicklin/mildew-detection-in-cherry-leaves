@@ -5,6 +5,7 @@ import os
 import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib import image as imread
+import random
 
 
 def leaves_visualiser_body():
@@ -102,12 +103,17 @@ def leaves_visualiser_body():
             st.error("No image files found in the specified directory.")
             return
 
-        st.write(
-            f"Found {len(image_files)} image files. Creating a montage...")
+        # Randomly select images to display
+        n_images_to_display = nrows * ncols
+        if len(image_files) > n_images_to_display:
+            selected_images = random.sample(image_files, n_images_to_display)
+        else:
+            selected_images = image_files
+            random.shuffle(selected_images)
 
-        for _, (ax, img_file) in enumerate(zip(axes.flatten(),
-                                               image_files[:nrows*ncols])):
+        st.write(f"Displaying a montage of {len(selected_images)} images...")
 
+        for ax, img_file in zip(axes.flatten(), selected_images):
             img_path = os.path.join(dir_path, img_file)
             try:
                 img = imread.imread(img_path)

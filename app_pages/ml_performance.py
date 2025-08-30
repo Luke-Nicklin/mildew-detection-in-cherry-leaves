@@ -29,21 +29,23 @@ def ml_performance_body():
 
     st.write("### Model history")
     st.write("""
-        The plots below show the model's training accuracy and loss
-        over epochs. The model was trained for 20 epochs with a 
-             batch size of 32.
+        The plots below show the model's training and validation
+             loss and accuracy over epochs. The model was trained
+             for 22 epochs with a batch size of 32.
         """)
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image(os.path.join("outputs", "v1", "model_training_acc.png"),
-                 caption="Model training accuracy",
-                 use_container_width=True)
-    with col2:
-        st.image(os.path.join("outputs", "v1", "model_training_losses.png"),
-                 caption="Model training losses",
-                 use_container_width=True)
-
+    st.image(
+        os.path.join(
+            "outputs", "v1", "training_and_validation_loss_and_accuracy.png"
+        ),
+        caption="Model training and validation loss and accuracy",
+        use_container_width=True
+    )
+   
     st.write("### Genralised performance on the test set")
+    st.write("""
+        The table below presents the evaluation metrics of the
+        model on the test dataset, including loss and accuracy.
+        """)
     version = "v1"
     metrics_df = pd.DataFrame(
         load_evaluation_metrics(version),
