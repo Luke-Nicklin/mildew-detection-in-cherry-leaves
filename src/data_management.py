@@ -1,29 +1,42 @@
-"""Data management utilities for Streamlit applications."""
-
+import streamlit as st
+import pandas as pd
+from datetime import datetime
 import pickle
 from io import BytesIO
-import streamlit as st
 
 
-def download_dataframe_as_csv(df):
+def download_dataframe_as_csv(df: pd.DataFrame, **kwargs):
     """
-    Creates a download button in Streamlit to download a
-    DataFrame as a CSV file.
+    Generates a download button for a pandas DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to download.
+        **kwargs: Additional keyword arguments to pass to st.download_button,
+                  including 'key' for a unique widget identifier.
     """
+    timestamp = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+    file_name = f"prediction-results-{timestamp}.csv"
+    
     # Create an in-memory buffer to hold the CSV data
     csv_buffer = BytesIO()
     df.to_csv(csv_buffer, index=False)
-
-    # use Streamlit's built-in download button
+    csv_buffer.seek(0)
+    
+    # Use Streamlit's built-in download button, passing all keyword arguments
     st.download_button(
-        label="Download data as CSV",
+        label="Download Results as CSV",
         data=csv_buffer,
-        file_name='data.csv',
-        mime='text/csv'
-                    )
+        file_name=file_name,
+        mime='text/csv',
+        **kwargs
+    )
 
 
 def load_pkl_file(file_path):
     """Load a pickle file and return the object."""
-    with open(file_path, 'rb') as file:
-        return pickle.load(file)
+    try:
+        with open(file_path, 'rb') as file:
+            return pickle.load(file)
+    except FileNotFoundError:
+        st.error(f"Error: Pickle file not found at '{file_path}'.")
+        return None
