@@ -118,9 +118,28 @@ All python pages for this project have been tested using the [Code Institute Pyt
 - Data Management page ![Data Management](readme_images/data-management-pep-8.png)
 - App page ![App](readme_images/app-pep-8.png)
 
-**Manual testing**
+### Manual testing
+
+**Summary page**
 
 Test: Make sure users can see the summary page so they can read key information about the project.
+
+Steps:
+
+1. Navigate to the [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
+2. Select 'Summary' radio
+
+Expected:
+
+The summary page appears when you select the 'Summary' radio button and shows the relevant content.
+
+Actual:
+
+The summary page appears when you select the 'Summary' radio button and it shows the relevant content.
+
+<hr>
+
+Test: Make sure users can see the project hypothese page so they can understand the hypotheses being tested.
 
 Steps:
 
