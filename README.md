@@ -120,22 +120,20 @@ All python pages for this project have been tested using the [Code Institute Pyt
 
 **Manual testing**
 
-Test: Make sure a user can view
+Test: Make sure users can see the summary page so they can read key information about the project.
 
 Steps:
 
-1. Navigate to the [Mildew Detection In Cherry Leaves]()
-2. Select 'Leaves visualiser' radio
-3. 
-4. 
+1. Navigate to the [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
+2. Select 'Summary' radio
 
 Expected:
 
-
+The summary page appears when you select the 'Summary' radio button and shows the relevant content.
 
 Actual:
 
-
+The summary page appears when you select the 'Summary' radio button and it shows the relevant content.
 
 ## CRISP-DM
 
