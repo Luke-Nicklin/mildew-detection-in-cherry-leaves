@@ -1,2 +1,6 @@
 README.md
-/readme_images
+readme_images/
+__pycache__/
+DataCollection.ipynb
+DataVisualisation.ipynb
+ModellingEvaluating.ipynb
