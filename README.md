@@ -84,23 +84,11 @@ Streamlit Multipage was used to create a menu with the following pages:
 - The App live link is: `https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/`
 - The project was deployed to Render using the following steps.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
-
 1. Create a Web Service. Log in to your Render account and create a new "Web Service."
-
 2. Connect to GitHub. Link your Render account to your GitHub repository and select the project you want to deploy.
-
 3. Configure Settings. Name your service and confirm the correct branch is selected for deployment.
-
 4. Add Build and Start Commands. Provide the build command pip install -r requirements.txt && ./setup.sh and the start command streamlit run app.py.
-
 5. Create Service. Click the button to create your service and start the automatic deployment.
-
 6. Access App. Once the build is complete, use the provided public URL to access your live application.
 
 ## Main Data Analysis and Machine Learning Libraries
