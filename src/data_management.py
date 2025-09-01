@@ -1,8 +1,11 @@
-import streamlit as st
-import pandas as pd
+"""Data management utilities for Streamlit applications."""
+
+
+from io import BytesIO
 from datetime import datetime
 import pickle
-from io import BytesIO
+import streamlit as st
+import pandas as pd
 
 
 def download_dataframe_as_csv(df: pd.DataFrame, **kwargs):
@@ -16,12 +19,12 @@ def download_dataframe_as_csv(df: pd.DataFrame, **kwargs):
     """
     timestamp = datetime.now().strftime("%Y-%m-%d-%H%M%S")
     file_name = f"prediction-results-{timestamp}.csv"
-    
+
     # Create an in-memory buffer to hold the CSV data
     csv_buffer = BytesIO()
     df.to_csv(csv_buffer, index=False)
     csv_buffer.seek(0)
-    
+
     # Use Streamlit's built-in download button, passing all keyword arguments
     st.download_button(
         label="Download Results as CSV",

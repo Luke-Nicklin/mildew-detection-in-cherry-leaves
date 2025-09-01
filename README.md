@@ -108,7 +108,7 @@ Streamlit Multipage was used to create a menu with the following pages:
 
 All python pages for this project have been tested using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
 
-- Leaves Visualiser page
+- Leaves Visualiser page # ![Leaves Visualiser](readme_images/leaves-visualiser-pep-8.png)
 - Ml Performance page
 - Multipage
 - Powdery Mildew Detector page

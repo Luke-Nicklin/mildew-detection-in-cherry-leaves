@@ -40,7 +40,7 @@ def ml_performance_body():
         caption="Model training and validation loss and accuracy",
         use_container_width=True
     )
-   
+
     st.write("### Genralised performance on the test set")
     st.write("""
         The table below presents the evaluation metrics of the

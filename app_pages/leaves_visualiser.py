@@ -1,11 +1,11 @@
 """Module for the leaves visualiser page in a Streamlit app."""
 
 
+import random
 import os
 import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib import image as imread
-import random
 
 
 def leaves_visualiser_body():
