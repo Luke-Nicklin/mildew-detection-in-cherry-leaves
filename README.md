@@ -104,6 +104,21 @@ Streamlit Multipage was used to create a menu with the following pages:
 - Pandas - Used to create a DataFrame that structures the prediction results, making it easy to display them and provide a download link.
 - OS - Used to create robust file paths that work correctly on different systems, avoiding common errors like those caused by a backslash or forward slash.
 
+## Testing - Python PEP-8
+
+All python pages for this project have been tested using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
+
+- Leaves Visualiser page
+- Ml Performance page
+- Multipage
+- Powdery Mildew Detector page
+- Project Hypotheses page
+- Summary page
+- Evaluate CLF page
+- Predictive Analysis page
+- Data Management page
+- App page
+
 ## CRISP-DM
 
 CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology for data minig projects. It provides a structured framework that organises data mining into 6 phases:
