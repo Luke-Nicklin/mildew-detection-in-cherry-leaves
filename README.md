@@ -119,6 +119,25 @@ All python pages for this project have been tested using the [Code Institute Pyt
 - Data Management page
 - App page
 
+**Manual testing**
+
+Test: Make sure a user can view
+
+Steps:
+
+1. Navigate to the [Mildew Detection In Cherry Leaves]()
+2. Select 'Leaves visualiser' radio
+3. 
+4. 
+
+Expected:
+
+
+
+Actual:
+
+
+
 ## CRISP-DM
 
 CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology for data minig projects. It provides a structured framework that organises data mining into 6 phases:
