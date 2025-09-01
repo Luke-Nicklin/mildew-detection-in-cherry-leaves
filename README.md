@@ -120,6 +120,8 @@ All python pages for this project have been tested using the [Code Institute Pyt
 
 ### Manual testing
 
+<hr>
+
 **Summary page**
 
 Test: Make sure users can see the summary page so they can read key information about the project.
