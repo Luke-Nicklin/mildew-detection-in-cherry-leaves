@@ -154,7 +154,7 @@ The project hypotheses page appears when you select the 'Project Hypotheses' rad
 
 Actual:
 
-The project hypotheses page appeared when I selected the 'project Hypotheses' radio button and it showed the relevant content.
+The project hypotheses page appeared when I selected the 'Project Hypotheses' radio button and it showed the relevant content.
 
 <hr>
 
@@ -166,6 +166,9 @@ Steps:
 
 1. Navigate to [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
 2. Select 'Leaves Visualiser' radio
+3. Select 'Difference between average and variability image' check box
+4. Select 'Differences between average infected leaves and average healthy leaves' check box
+5. Select 'Image montage' check box
 
 Expected:
 
@@ -197,7 +200,26 @@ The powdery mildew detector page appears when you select the 'Powdery Mildew Det
 
 Actual:
 
-The powdery mildew detector page appeared when I selected the 'Powdery Mildew Detector' radio button and showed the relevant content. When I selected 'Browse files' I was able to upload images from my computer. When I selected predict, the image was displayed, the result of the detector showed if it was healthy or powdery mildew was detected, the prediction probabilities chart showed and I could download the results as a CSV file when I selected 'Download Results as CSV'. 
+The powdery mildew detector page appeared when I selected the 'Powdery Mildew Detector' radio button and showed the relevant content. When I selected 'Browse files' I was able to upload images from my computer. When I selected predict, the image was displayed, the result of the detector showed if it was healthy or powdery mildew was detected, the prediction probabilities chart showed and I could download the results as a CSV file when I selected 'Download Results as CSV'.
+
+<hr>
+
+**ML Performance**
+
+Test: Make sure users can see the ML Performance page so they can find out about the model used and view the labels distribution, model history and generalised performance on the test set.
+
+Steps:
+
+1. Navigate to [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
+2. Select 'ML Performance' radio
+
+Expected:
+
+The ml performance page appears when you select the 'ML Performance' radio button and shows the relevant content.
+
+Actual:
+
+The ml performance page appeared when I selected the 'ML Performance' radio button and it showed the relevant content.
 
 ## CRISP-DM
 
