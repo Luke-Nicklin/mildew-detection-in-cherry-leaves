@@ -8,7 +8,3 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
-outputs/
-image_shape.pkl
-evaluation.pkl
-class_indices.pkl
