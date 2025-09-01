@@ -146,7 +146,7 @@ Test: Make sure users can see the project hypotheses page so they can understand
 Steps:
 
 1. Navigate to [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
-2. Select 'Summary' radio
+2. Select 'Project Hypotheses' radio
 
 Expected:
 
