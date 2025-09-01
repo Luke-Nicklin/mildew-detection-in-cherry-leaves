@@ -108,16 +108,16 @@ Streamlit Multipage was used to create a menu with the following pages:
 
 All python pages for this project have been tested using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
 
-- Leaves Visualiser page # ![Leaves Visualiser](readme_images/leaves-visualiser-pep-8.png)
-- Ml Performance page
-- Multipage
-- Powdery Mildew Detector page
-- Project Hypotheses page
-- Summary page
-- Evaluate CLF page
-- Predictive Analysis page
-- Data Management page
-- App page
+- Leaves Visualiser page ![Leaves Visualiser](readme_images/leaves-visualiser-pep-8.png)
+- Ml Performance page ![Ml Performance](readme_images/ml-performance-pep-8.png)
+- Multipage ![Multipage](readme_images/multipage-pep-8.png)
+- Powdery Mildew Detector page ![Powdery Mildew Detector](readme_images/powdery-mildew-detection-pep-8.png)
+- Project Hypotheses page ![Project Hypotheses](readme_images/project-hypotheses-pep-8.png)
+- Summary page ![Summary](readme_images/summary-pep-8.png)
+- Evaluate CLF page ![Evaluate CLF](readme_images/evaluate-clf-pep-8.png)
+- Predictive Analysis page ![Predictive Analysis](readme_images/predictive-analysis-pep-8.png)
+- Data Management page ![Data Management](readme_images/data-management-pep-8.png)
+- App page ![App](readme_images/app-pep-8.png)
 
 **Manual testing**
 
