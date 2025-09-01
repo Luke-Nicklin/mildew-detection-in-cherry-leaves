@@ -141,7 +141,7 @@ The summary page appeared when I selected the 'Summary' radio button and it show
 
 <hr>
 
-**Project hypothesis**
+**Project Hypothesis**
 
 Test: Make sure users can see the project hypotheses page so they can understand the hypotheses being tested.
 
@@ -174,11 +174,11 @@ Steps:
 
 Expected:
 
-The leaves visualiser page appears when you select the 'Leaves Visualiser' radio button and shows the relevant content. The difference between average and variability image appears when you select the check box. The differences between average infected leaves and average healthy leaves image appears when you select the check box. The image montage appears when you select the check box and then select 'Create montage'. the image montage shows healthy leaves when you select 'healthy' in the drop down, and shows infected leaves when you select 'powdery_milkdew' in the drop down. The image montage is randomised and shows different images each time you select 'Create montage'.
+The leaves visualiser page appears when you select the 'Leaves Visualiser' radio button and shows the relevant content. The difference between average and variability image appears when you select the check box. The differences between average infected leaves and average healthy leaves image appears when you select the check box. The image montage appears when you select the check box and then select 'Create montage'. the image montage shows healthy leaves when you select 'healthy' in the drop down, and shows infected leaves when you select 'powdery_mildew' in the drop down. The image montage is randomised and shows different images each time you select 'Create montage'.
 
 Actual:
 
-The leaves visualiser page appeared when I selected the 'Leaves Visualiser' radio button and showed the relevant content. The difference between average and variability image appeared when I selected the check box. The differences between average infected leaves and average healthy leaves image appeared when I selected the check box. The image montage appeared when I selected the check box and then selected 'Create montage'. The image montage showed healthy leaves when I selected 'healthy' in the drop down, and showed infected leaves when I selected 'powdery_milkdew' in the drop down. The image montage is randomised and showed different images each time I selected 'Create montage'.
+The leaves visualiser page appeared when I selected the 'Leaves Visualiser' radio button and showed the relevant content. The difference between average and variability image appeared when I selected the check box. The differences between average infected leaves and average healthy leaves image appeared when I selected the check box. The image montage appeared when I selected the check box and then selected 'Create montage'. The image montage showed healthy leaves when I selected 'healthy' in the drop down, and showed infected leaves when I selected 'powdery_mildew' in the drop down. The image montage was randomised and showed different images each time I selected 'Create montage'.
 
 <hr>
 
@@ -193,7 +193,7 @@ Steps:
 3. Download dataset rom Kaggle if required
 4. Select 'Browse files'
 5. Select images from your computer to upload
-6. Select 'Predcit'
+6. Select 'Predict'
 7. Select 'Download Results as CSV'
 
 Expected:
@@ -245,8 +245,7 @@ The project was planned using epics and user stories for each of the 6 CRISP-DM 
 - Inspiration and code have been used and adapted from cla-cif's Cherry-Powdery-Mildew-Detector project [https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector] and barty-s' cherry-leaf-mildew-detection project [https://github.com/barty-s/cherry-leaf-mildew-detection-project] for the Data collection, Data visualisation, Modelling Evaluating jupyter notebooks and app pages.
 - Definition of cherry powdery mildew was adapted from the Washington State University website [https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/].
 - The dataset was provided by Code Institute and can be found [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+- Mentor guidance was provided by Can Sucullu
 
 ### Media
 
