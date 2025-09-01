@@ -175,6 +175,30 @@ Actual:
 
 The leaves visualiser page appeared when I selected the 'Leaves Visualiser' radio button and showed the relevant content. The difference between average and variability image appeared when I selected the check box. The differences between average infected leaves and average healthy leaves image appeared when I selected the check box. The image montage appeared when I selected the check box and then selected 'Create montage'. The image montage showed healthy leaves when I selected 'healthy' in the drop down, and showed infected leaves when I selected 'powdery_milkdew' in the drop down. The image montage is randomised and showed different images each time I selected 'Create montage'.
 
+<hr>
+
+**Powdery Mildew Detector**
+
+Test: Make sure users can see the powdery midlew detector page so they can upload images of cherry leaves to detect the presence of powdery midlew using a machine learning model and download the results as a CSV file.
+
+Steps:
+
+1. Navigate to [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
+2. Select 'Powdery Mildew Detector' radio
+3. Download dataset rom Kaggle if required
+4. Select 'Browse files'
+5. Select images from your computer to upload
+6. Select 'Predcit'
+7. Select 'Download Results as CSV'
+
+Expected:
+
+The powdery mildew detector page appears when you select the 'Powdery Mildew Detector' radio button and shows the relevant content. You can upload images and select 'Predict' to detect the presence of powdery mildew, view the prediction probabilities chart and download the results as a CSV file.
+
+Actual:
+
+The powdery mildew detector page appeared when I selected the 'Powdery Mildew Detector' radio button and showed the relevant content. When I selected 'Browse files' I was able to upload images from my computer. When I selected predict, the image was displayed, the result of the detector showed if it was healthy or powdery mildew was detected, the prediction probabilities chart showed and I could download the results as a CSV file when I selected 'Download Results as CSV'. 
+
 ## CRISP-DM
 
 CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely used methodology for data minig projects. It provides a structured framework that organises data mining into 6 phases:
