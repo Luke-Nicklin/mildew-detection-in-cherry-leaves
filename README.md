@@ -126,7 +126,7 @@ Test: Make sure users can see the summary page so they can read key information 
 
 Steps:
 
-1. Navigate to the [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
+1. Navigate to [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
 2. Select 'Summary' radio
 
 Expected:
@@ -139,20 +139,22 @@ The summary page appears when you select the 'Summary' radio button and it shows
 
 <hr>
 
-Test: Make sure users can see the project hypothese page so they can understand the hypotheses being tested.
+**Project hypothesis**
+
+Test: Make sure users can see the project hypotheses page so they can understand the hypotheses being tested.
 
 Steps:
 
-1. Navigate to the [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
+1. Navigate to [Mildew Detection In Cherry Leaves](https://mildew-detection-in-cherry-leaves-h9jw.onrender.com/)
 2. Select 'Summary' radio
 
 Expected:
 
-The summary page appears when you select the 'Summary' radio button and shows the relevant content.
+The project hypotheses page appears when you select the 'Project Hypotheses' radio button and shows the relevant content.
 
 Actual:
 
-The summary page appears when you select the 'Summary' radio button and it shows the relevant content.
+The project hypotheses page appears when you select the 'project Hypotheses' radio button and it shows the relevant content.
 
 ## CRISP-DM
 
