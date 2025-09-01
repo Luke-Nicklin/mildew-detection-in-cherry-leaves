@@ -135,7 +135,7 @@ The summary page appears when you select the 'Summary' radio button and shows th
 
 Actual:
 
-The summary page appears when you select the 'Summary' radio button and it shows the relevant content.
+The summary page appeared when I selected the 'Summary' radio button and it showed the relevant content.
 
 <hr>
 
@@ -154,7 +154,7 @@ The project hypotheses page appears when you select the 'Project Hypotheses' rad
 
 Actual:
 
-The project hypotheses page appears when you select the 'project Hypotheses' radio button and it shows the relevant content.
+The project hypotheses page appeared when I selected the 'project Hypotheses' radio button and it showed the relevant content.
 
 <hr>
 
